@@ -30,7 +30,6 @@ var zAdder = 0.04;
 
     function listener(){
       function onKeyPress(event) {
-        console.log("jalan bismillah")
         if (event.keyCode == 88 || event.keyCode == 120) {
           axis = xAxis;
         } else if (event.keyCode == 89 || event.keyCode == 121) {
@@ -340,7 +339,7 @@ var zAdder = 0.04;
 
             if (scale >= 1) membesar = -1;
             else if (scale <= -1) membesar = 1;
-            scale = scale + (membesar * 0.0119); 
+            scale = scale + (membesar * 0.0049); 
             gl.uniform1f(scaleLoc, scale);
       
       // Uniform untuk definisi cahaya
