@@ -271,7 +271,7 @@ var zAdder = 0.04;
       var shine = gl.getUniformLocation(program,'shininess'); //program nyesuain huruf atau kubus
       var s = 0.06; //tingkat shininess
 
-      var ambientColor = glMatrix.vec3.fromValues(0.17, 0.41, 0.03);
+      var ambientColor = glMatrix.vec3.fromValues(0.17, 0.40, 0.49);
       gl.uniform3fv(lightColorLoc, lightColor);
       gl.uniform3fv(lightPositionLoc, lightPosition);
       gl.uniform3fv(ambientColorLoc, ambientColor);
