@@ -205,15 +205,6 @@ var zAdder = 0.04;
       gl.useProgram(program);
 
             var triangleVertices = new Float32Array([
-              // 0.35, 0.4,
-              // 0.5, 0.4,
-              // 0.5, 0.3,
-              // 0.4, 0.3,
-              // 0.4, 0.0,
-              // 0.3, 0.0,
-              // 0.3, 0.3,
-              // 0.2, 0.3,
-              // 0.2, 0.4
               // front left (abef)
               -0.300, 0.200, 0.00,
               -0.200, 0.300, 0.00,
@@ -385,16 +376,15 @@ var zAdder = 0.04;
       var near = 0.5;
       var far = 10.0;
       glMatrix.mat4.perspective(pm,
-      fovy,
-      aspect,
-      near,
-      far
+        fovy,
+        aspect,
+        near,
+        far
       );
 
       gl.uniformMatrix4fv(vmLoc, false, vm);
       gl.uniformMatrix4fv(pmLoc, false, pm);
 
-      
       var mmLoc = gl.getUniformLocation(program, 'model');
       var mm = glMatrix.mat4.create();
       glMatrix.mat4.translate(mm, mm, [0.0, 0.0,-0.2]);
