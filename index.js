@@ -346,7 +346,7 @@ var zAdder = 0.04;
       var lightColorLoc = gl.getUniformLocation(program, 'lightColor');
       var lightPositionLoc = gl.getUniformLocation(program, 'lightPosition');
       var ambientColorLoc = gl.getUniformLocation(program, 'ambientColor');
-      var lightColor = [2., 2., 2.];
+      var lightColor = [2.5, 2.5, 2.5];
       var lightPosition = [0 + gerak2[0] ,0 + gerak2[1] ,0 + gerak2[2]];
 
       var shine = gl.getUniformLocation(program,'shininess'); //program nyesuain huruf atau kubus
@@ -450,7 +450,7 @@ var zAdder = 0.04;
       gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
       triangle();
-      gl.drawArrays(gl.TRIANGLES, 0,18);
+      gl.drawArrays(gl.TRIANGLES, 0, 18);
       cube();    
       gl.drawArrays(gl.TRIANGLES, 0, 30);
       requestAnimationFrame(render); 
